@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/b6628c646b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
+</head>
+<style>
+	@media only screen and (max-width: 414px) {
+	  #page1 {
+	  	height: 736px;
+	  }
+	}
+	#page1 {
+		min-height: 880px;
+	}
+	#page2 {
+		min-height: 700px;
+	}	
+	#page4 {
+		min-height: 400px;
+	}
+	body {
+		font-family: 'Mali', cursive;
+	}
+</style>
+<script>
+    $(function() {
+    	AOS.init();
+    	$('#btn-ClickMe').click(function(event) {
+    		$('html, body').animate({
+		        scrollTop: $("#page2").offset().top
+		    }, 1000);
+    	});
+    });
+</script>
+<body class="bg-secondary">
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">Rambo</a>
+	</nav>
+	
+	<section id="page1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div>
+						<img src="image/bg-01.png" class="img-fluid" alt="Responsive image">
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<button type="button" class="col-5 ml-auto mr-auto btn btn-outline-dark text-light btn-lg btn-block shadow" id="btn-ClickMe">Click me</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-light" id="page2">
+		<div class="container">
+			<div class="row pt-5">
+				<div class="col-md-12" data-aos="fade-down">
+					<img src="image/bg01-01-01.jpg" class="img-fluid" alt="Responsive image">
+				</div>
+				<div class="col-md-12 text-dark pt-5">
+					<h3>About me</h3>
+					<p>สวัสดีครับ ผม นายอภิภู สถิรชาติ (แรมโบ้)</p>
+					<ul>
+						<li>วันเดือนปีเกิด : 27 มกราคม 2537</li>
+						<li>อายุ : 26</li>
+						<li>น้ำหนัก : 73</li>
+						<li>ส่วนสูง : 175</li>
+						<li>ที่อยู่ปัจจุบัน : 698 ซ.เพชรเกษม 77/7 ถ.เพชรเกษม แขวงหนองค้างพลู เขตหนองแขม กรุงเทพ 10160</li>
+						<li>เบอร์ติดต่อ : 099-967-4469</li>
+						<li>อีเมล์ : Aphiphu.kubo@gmail.com</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="page3" class="text-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xl-6 mt-5">
+					<div class="card" data-aos="fade-left">
+						<div class="card-header shadow">
+							<h3>Education</h3>
+						</div>
+						<div class="card-body">
+							<ul>
+								<li>2552 - 2554 จบมัธยมศึกษาตอนปลาย <b>โรงเรียนวัดนวลนรดิศ</b></li>
+								<li>2555 - 2559 จบการศึกษาปริญญาตรี <b>มหาวิทยาลัยสยาม</b> คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 col-xl-6 mt-5 mb-3">
+					<div class="card"  data-aos="fade-left">
+						<div class="card-header shadow">
+							<h3>Work experience</h3>
+						</div>
+						<div class="card-body">
+							<ul>
+								<li>พฤษาภาคม 2558</li>
+								<ul>
+									<li>นักศึกษาฝึกงาน บริษัท เคล็กส เพิร์ท (ประเทศไทย) จำกัด. ได้รับมอบหมายฝึกพัฒนา ระบบ POS บน Android กับเพื่อนร่วมทีม</li>
+								</ul>
+								<li>พฤศจิกายน 2559 ถึง ปัจจุบัน</li>
+								<ul>
+									<li>พนักงาน ตำแหน่ง Programmer บริษัท พีดีซอฟต์ จำกัด 
+										<p>เป็นบริษัทพัฒนา web application ระบบออกรายงานผลตรวจโรคจากพยาธิแพทย์ โดยปัจจุบันมีพยาธิแพทย์ใช้งานจากโรงพยาบาลหลายแห่ง</p>
+										<p>งานที่ได้รับมอบหมาย 
+											<ul>
+												<li>พัฒนาระบบคิดราคาค่าสิ่งส่งตรวจ</li>
+												<li>พัฒนาระบบสั่งย้อม (เป็นระบบให้พยาธิแพทย์สั่งย้อมสิ่งส่งตรวจ เพื่อนำไปวินิจฉัยออกผลตรวจ)</li>
+												<li>แก้ปัญหาด้าน Software และ ดูแลอุปกรณ์ภายในสำนีกงาน</li>
+											</ul>
+										</p>
+									</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- skil -->
+	<section id="page4" class="bg-light text-dark">
+		<div class="container">
+			<div class="row p-5" data-aos="fade-right">
+				<div class="col-md-12">
+					<h3>Skil coding</h3>
+					<ul>
+						<li>Php
+							<ul class="list-unstyled">
+								<li><div class="progress">
+									  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>Codeigniter
+							<ul class="list-unstyled">
+								<li><div class="progress">
+									  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>Javascript
+							<ul class="list-unstyled">
+								<li><div class="progress">
+									  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>Jquery
+							<ul class="list-unstyled">
+								<li><div class="progress">
+									  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%;background-color: #20c997;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>Html, Css
+							<ul class="list-unstyled">
+								<li><div class="progress">
+									  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%;background-color: #6610f2;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>Other Node.js, java
+							<ul class="list-unstyled">
+								<li><div class="progress">
+									  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%;background-color: #fd7e14;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="page5" class="text-light">
+		<div class="container">
+			<div class="row p-5">
+				<div class="col-md-12">
+					<h3>My work</h3>
+					<div class="row">
+						<div class="col-md-12 col-xl-6">
+							<a href="image/__work1.png" target="_blank"><img src="image/__work1.png" class="img-fluid" alt="Responsive image"></a>
+						</div>
+						<div class="col-md-12 col-xl-6 mt-3">
+							<a href="image/__work2.png" target="_blank"><img src="image/__work2.png" class="img-fluid" alt="Responsive image"></a>
+						</div>
+						<div class="col-md-12 col-xl-6 mt-3">
+							<a href="image/__work3.png" target="_blank"><img src="image/__work3.png" class="img-fluid" alt="Responsive image"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
+
